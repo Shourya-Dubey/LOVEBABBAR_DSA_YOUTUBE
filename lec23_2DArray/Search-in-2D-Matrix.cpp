@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-bool isPresent(int arr[][3], int target){
+bool isPresent(int arr[3][3], int target){
     int row = 3;
     int col = 3;
     int s = 0; 
@@ -27,7 +27,7 @@ bool isPresent(int arr[][3], int target){
 main()
 {
     int arr[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
-    if(isPresent(arr, 1)){
+    if(isPresent(arr, 3)){
         cout<<"Number is present"<<endl;
     }else{
         cout<<"Number is not Present"<<endl;
