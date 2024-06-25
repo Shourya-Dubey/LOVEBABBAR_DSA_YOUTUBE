@@ -6,8 +6,13 @@ main(){
 
     //Address Of Operator -> &
     cout<<"address of num -> "<<&num<<endl;
+
+    //Pointer
     int *ptr = &num;
     cout<<ptr<<endl;
-    cout<<*ptr<<endl;
+
+    //Deference Operator -> *
+    cout<<"Value at p -> "<<*ptr<<endl;
+
     return 0;
 }
