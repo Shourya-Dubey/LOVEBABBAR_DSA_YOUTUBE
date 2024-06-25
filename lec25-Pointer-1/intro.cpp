@@ -6,5 +6,8 @@ main(){
 
     //Address Of Operator -> &
     cout<<"address of num -> "<<&num<<endl;
+    int *ptr = &num;
+    cout<<ptr<<endl;
+    cout<<*ptr<<endl;
     return 0;
 }
