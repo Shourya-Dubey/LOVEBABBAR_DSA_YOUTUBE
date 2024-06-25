@@ -20,6 +20,9 @@ main(){
     cout << "address of d -> " << p2 << endl;
     cout << "Value at p2 -> " << *p2 << endl;
 
+    cout<<"Size of int -> "<<sizeof(num)<<endl;
+    cout<<"Size of p2 -> "<<sizeof(p2)<<endl;
+
 
 
     return 0;
