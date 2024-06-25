@@ -11,8 +11,16 @@ main(){
     int *ptr = &num;
     cout<<ptr<<endl;
 
-    //Deference Operator -> *
-    cout<<"Value at p -> "<<*ptr<<endl;
+    // Deference Operator -> *
+    cout << "Value at p -> " << *ptr << endl;
+
+
+    double d = 4.2;
+    double *p2 = &d;
+    cout << "address of d -> " << p2 << endl;
+    cout << "Value at p2 -> " << *p2 << endl;
+
+
 
     return 0;
 }
