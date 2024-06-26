@@ -23,7 +23,5 @@ main(){
     cout<<"Size of int -> "<<sizeof(num)<<endl;
     cout<<"Size of p2 -> "<<sizeof(p2)<<endl;
 
-
-
     return 0;
 }
