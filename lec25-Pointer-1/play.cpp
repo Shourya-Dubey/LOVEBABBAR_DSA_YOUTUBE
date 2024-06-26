@@ -11,5 +11,23 @@ main(){
     a++;
     cout<<num<<endl;
 
+    int *q = &num;
+    (*q)++;
+    cout<<num<<endl;
+
+    //copying a pointer
+    int *ptr = p;
+    cout << p << " - " << ptr << endl;
+    cout<<*p<<" - " <<*ptr<<endl;
+
+    //Important Concept
+    int l = 3;
+    int *t = &l;
+    *t = *t + 1;
+    cout<<*t<<endl;
+    
+    cout<<"Before t-> "<<t<<endl;
+    t = t + 1;
+    cout << "after t-> " << t << endl;
     return 0;
 }
