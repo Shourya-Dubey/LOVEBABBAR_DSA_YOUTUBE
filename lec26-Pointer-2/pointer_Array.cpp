@@ -5,5 +5,8 @@ main(){
     cout<<"Address of  First Memory block -> "<<arr<<endl;
     cout<<"Address of  First Memory block -> "<<&arr[0]<<endl;
     cout<<"value at arr index -> "<<*arr<<endl;
+    cout<<"value at arr index -> "<<*arr + 1<<endl;
+    cout<<"value at arr index -> "<<*(arr + 1)<<endl;
+    cout << "value at arr index -> " << (*arr) + 1 << endl;
     return 0;
 }
