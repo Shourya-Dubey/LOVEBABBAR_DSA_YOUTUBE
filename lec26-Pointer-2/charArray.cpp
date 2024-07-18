@@ -10,4 +10,8 @@ main(){
     cout<<arr<<endl;
     int *ptr = &arr[0];
     cout<<ptr<<endl;
+
+    char temp = 'z';
+    char *p = &temp;
+    cout<<p<<endl;
 }
