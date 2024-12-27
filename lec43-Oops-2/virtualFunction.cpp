@@ -7,6 +7,7 @@ class A
     {
         cout<<"Calling Base Class A"<<endl;
     }
+    // virtual void show() = 0;
 
     static void display(){
         cout<<"display"<<endl;

@@ -1,26 +1,62 @@
-#include<iostream>
+// #include<iostream>
+// using namespace std;
+// class A
+// {
+//     public:
+//     void display()
+//     {
+//         cout<<"Calling from Class A"<<endl;
+//     }
+// };
+
+// class B : public virtual A
+// {};
+
+// class C : public virtual A
+// {};
+
+// class D : public B, public C
+// {};
+
+// main()
+// {   
+//     D obj;
+//     obj.display();
+//     return 0;
+// }
+
+#include <iostream>
+
 using namespace std;
-class A
+class BaseClass1
 {
-    public:
-    void display()
+public:
+    BaseClass1()
     {
-        cout<<"Calling from Class A"<<endl;
+        cout << " BaseClass1 constructor called" << endl;
     }
 };
 
-class B : public virtual A
-{};
+class BaseClass2
+{
+public:
+    BaseClass2()
+    {
+        cout << "BaseClass2 constructor called" << endl;
+    }
+};
 
-class C : public virtual A
-{};
+class DerivedClass : public BaseClass2, public BaseClass1
+{
+public:
+    DerivedClass()
+    {
+        cout << "DerivedClass constructor called" << endl;
+    }
+};
 
-class D : public B, public C
-{};
-
-main()
-{   
-    D obj;
-    obj.display();
+int main()
+{
+    DerivedClass derived_class;
     return 0;
 }
